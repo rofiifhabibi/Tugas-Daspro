@@ -72,7 +72,7 @@ var banner = document.getElementById('bannerkanan');
 for (let e = 0; e < lagu.length; e++) {
     elementbanner += `
         <div class="coverlagu">
-            <img src="${lagu[e][4]}"
+            <img src="${lagu[e][4]}"/>
 
         </div>`
 }
