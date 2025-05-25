@@ -1,0 +1,229 @@
+body {
+    display: flex;
+    width: 100%;
+    height: 100dvh;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: black;
+}
+
+#containerheader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    background: #0ec292;
+    box-shadow: -3px -26px 251px 38px rgba(14, 194, 146, 0.75);
+    -webkit-box-shadow: -3px -26px 251px 38px rgba(14, 194, 146, 0.75);
+    -moz-box-shadow: -3px -26px 251px 38px rgba(14, 194, 146, 0.75);
+    gap: 20px;
+    position: sticky;
+}
+
+.photo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.titleheader {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+}
+
+#miniheader {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#header {
+    font-size: 60px;
+    width: max-content;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.imgheader {
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#gif {
+    margin-top: 20px;
+    margin-right: 10rem;
+}
+
+#containerLagu {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+#daftar {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    min-height: 0;
+    justify-content: space-between;
+}
+
+#laguscroll {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: scroll;
+    height: auto;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border-right: 4px solid rgb(0, 0, 0);
+    border-top: 4px solid rgb(0, 0, 0);
+}
+
+#bannerkanan {
+    margin-top: 20px;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-grow: 1;
+    overflow-y: scroll;
+    gap: 10px;
+}
+
+.headerlagu {
+    padding-left: 15.5cap;
+    width: 100%;
+    display: flex;
+    gap: 12cap;
+    height: 50px;
+}
+
+.lagu {
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 88%;
+    padding: 2px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.lagu:hover {
+    background-color: rgb(29, 29, 29);
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.lagu h2 {
+    margin: 0;
+}
+
+.titlelagu {
+    display: flex;
+    flex-direction: column;
+}
+
+.lagu img {
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+.bawah {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.coverlagu {
+    cursor: pointer;
+}
+
+#audio-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height: 40px;
+    margin-right: 10;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(255, 255, 255) !important;
+    display: hidden;
+    background-color: none;
+    color: rgba(255, 255, 255, 0);
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: rgba(193, 192, 192, 0.841) !important;
+    display: hidden;
+    border-radius: 20px;
+    margin: 5px;
+
+}
+
+.logospotify {
+    margin-left: 8rem;
+}
+
+.liply {
+    width: 21.8cap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4e4e4e00;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888888ad;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+::-webkit-scrollbar-button {
+    display: none;
+}

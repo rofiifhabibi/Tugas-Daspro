@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagu Favorit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="containerheader">
+
+    </div>
+    <div id="containerLagu">
+        <div class="headerlagu">
+            <a style="margin-right: 89px; cursor: pointer;"># Title</a>
+            <a style="cursor: pointer;">🤍 Liked</a>
+            <a style="margin-left: 4px;cursor: pointer;">▶ Played</a>
+            <a style="margin-left: 13rem; cursor: pointer;">Cover</a>
+        </div>
+        <div id="daftar">
+            <div id="laguscroll">
+
+            </div>
+            <div id="bannerkanan">
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const audios = document.querySelectorAll("audio");
+
+        audios.forEach(audio => {
+            audio.addEventListener("play", () => {
+                audios.forEach(a => {
+                    if (a !== audio) {
+                        a.pause();
+                        a.currentTime = 0; // reset durasi ke awal
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
